@@ -1,0 +1,263 @@
+
+       
+    <div id="container" class="container" >
+
+        <div class="row">
+            <div class="col s12 center-align" style="margin-top: 50px;">
+
+                <div id="init">
+                <a id="init" class="btn-floating btn-large waves-effect waves-light fond"><i class="material-icons">add</i></a>
+                <div>Lancer la simulation</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="coople_synt_sequ" class="coople_synt_sequ hide">
+
+            <div id="synthetiseur" class="synthetiseur">
+
+                <div class="row" style="margin-top: 10px">
+
+                    <div class="intro col s12 l5 m12">SynthetiseL</div>
+            
+                    <canvas id='canvas' class="canvas col s6 l2 m4 offset-s3 offset-m4" width="300" height="300"></canvas>
+
+                    <div class="potar_container col s12 l5 m12 noSelect">
+                        <div class="potar_block">
+                            <p><i class="material-icons">volume_up</i>Volume</p>
+                            <div class="potarVAR potar"></div>
+                        </div>
+                        <div class="potar_block">
+                            <p><i class="material-icons">arrow_drop_up</i>Attack</p>
+                            <div class="potarVAR potar"></div>
+                        </div>
+                        <div class="potar_block">
+                            <p><i class="material-icons">arrow_drop_down</i>Release</p>
+                            <div class="potarVAR potar"></div>
+                        </div>   
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <ul class="manual col s12 noSelect collapsible">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">tune</i>Wave Shape</div>
+                            <div class="collapsible-body">
+                                
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="potar_block">
+                                        <div class="dom_manual_harmonique potar"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="save_wave" class="save_wave waves-effect waves-light btn deep-purple lighten-4 col s2 offset-s5"><i class="material-icons">save_alt</i></div>
+                                    </div>
+                                    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 l5 offset-l4">
+                        <p class="octave_buttons waves-effect waves-purple btn-flat"><i class="material-icons">navigate_before</i></p>
+                        <p class="octave_buttons waves-effect waves-purple btn-flat"><i class="octave_buttons material-icons">navigate_next</i></p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <ul class="col l3 s12 collapsible">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">show_chart</i>Classic wave</div>
+                            <div class="collapsible-body">
+                                <div class="buttons_select_container">
+                                    <button class="waves-effect waves-purple btn-flat buttons_select"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_select"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_select"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_select"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_select"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_select"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">music_note</i>Instruments</div>
+                            <div class="collapsible-body">
+                                <div class="buttons_select_container">
+                                    <button class="waves-effect waves-purple btn-flat buttons_instruments"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_instruments"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_instruments"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_instruments"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_instruments"></button>
+                                    <button class="waves-effect waves-purple btn-flat buttons_instruments"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">save_alt</i>Wave saved</div>
+                            <div id="save_folder" class="collapsible-body">
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="container_keyboard col s12 l6 noSelect">
+                        <div class="keyboard white"></div>
+                        <div class="keyboard black"></div>
+                        <div class="keyboard white"></div>
+                        <div class="keyboard black"></div>
+                        <div class="keyboard white"></div>
+                        <div class="keyboard white" style="margin-left: -6px;"></div>
+                        <div class="keyboard black"></div>
+                        <div class="keyboard white"></div>
+                        <div class="keyboard black"></div>
+                        <div class="keyboard white"></div>
+                        <div class="keyboard black"></div>
+                        <div class="keyboard white"></div>
+                        <div class="keyboard white" style="margin-left: -5px;"></div>
+
+
+                        
+                    </div>
+
+                    <div class="frequency_container col l3 s12 noSelect">
+
+                        <div class="row">
+
+                            <div class='intro col s12'>Equalizer</div>
+
+
+                            <canvas id="canvas_equalizer" class="col s12 canvas_equalizer" style="-webkit-background-size: cover; background-size: cover; padding:0; margin: 0;" width="300" height="125"></canvas>
+
+
+                            <div class="band_equalizer_container col s6">
+
+                                <p class="label_equalizer" >Gain</p>
+                                <div class="potar buttons_filters"></div>
+                                <p class="label_equalizer">Frequency</p>
+                                <div class="potar buttons_filters"></div>
+
+                            </div>
+
+                            <div class="band_equalizer_container col s6">
+
+                                <p class="label_equalizer">Gain</p>
+                                <div class="potar buttons_filters"></div>
+                                <p class="label_equalizer">Frequency</p>
+                                <div class="potar buttons_filters"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sequencer_container_general">
+
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">clear_all</i>Sequencer</div>
+                        <div class="collapsible-body">
+                            <button id="playSong" class="sequencer_buton_play waves-effect waves-green btn-large purple"><i class="material-icons">play_arrow</i></button>
+                            <button id="stopSong" class="sequencer_buton_play waves-effect waves-red btn-large purple"><i class="material-icons">stop</i></button>
+
+                            <div id="sequencer_container" class="sequencer_container"></div>
+                            
+                        </div>
+                    </li>
+                </ul>
+                
+                
+            </div>
+
+        </div>
+
+        <div id="coople_drums_sequ" class="coople_synt_sequ hide">
+
+            <div id="drum" class="container_drums">
+
+                <div class="row intro">DrumL</div>
+
+
+                <div class="row">
+                    <p class="col s4">Bass</p>
+                    <p class="col s4">Snar</p>
+                    <p class="col s4">Hit Hat</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col s4">
+                        <div class="button_drum"></div>
+                    </div>
+                    <div class="col s4">
+                        <div class="button_drum"></div>
+                    </div>
+                    <div class="col s4">
+                        <div class="button_drum"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="sequencer_container_general">
+
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">clear_all</i>Sequencer</div>
+                        <div class="collapsible-body">
+                            <button id="playSongD" class="sequencer_buton_play waves-effect waves-green btn-large purple"><i class="material-icons">play_arrow</i></button>
+                            <button id="stopSongD" class="sequencer_buton_play waves-effect waves-red btn-large purple"><i class="material-icons">stop</i></button>
+
+                            <div id="sequencer_container_drum" class="sequencer_container"></div>
+                            
+                        </div>
+                    </li>
+                </ul>
+                
+                
+            </div>
+
+        </div>
+
+        
+
+        
+
+        
+    </div>
+

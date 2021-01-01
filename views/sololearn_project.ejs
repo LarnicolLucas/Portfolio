@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col s12" style="width: 100%; position: absolute; z-index: -1; margin: 0; padding: 0;">
+        <img style="width: 100%;" src="images/fond.png"/>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 64px; margin-bottom: 64px;">
+    <div class="col s12 center-align">
+        <h3><b>SoloLearn Projects</b></h3>
+    </div>
+</div>
+
+<div id="app_sololearn_project" class="container">
+    <div class="row">
+
+        <sl-teaser v-for="keys in cards" :key="keys.id"
+            :src_img="keys.src_img"
+            :description="keys.description"
+            :link="keys.link"
+            :link_placeholder="keys.link_placeholder"
+        >
+        </sl-teaser>
+
+    </div>
+</div>

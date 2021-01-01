@@ -1,0 +1,66 @@
+    	<div v-scroll="leaveTopScroll" v-bind:class="{ bandeauAnim: !windowTop }" class="fixed-top bandeau">
+
+	    		<div v-on:click="miniMenuClicked = !miniMenuClicked" class="menu">
+	    			<article>
+		    			<span v-bind:class="{ menulAnim1: miniMenuClicked }" class="spanMenu sp1"></span>
+		    			<span v-bind:class="{ menulAnim2: miniMenuClicked }" class="spanMenu sp2"></span>
+		    			<span v-bind:class="{ menulAnim3: miniMenuClicked }" class="spanMenu sp3"></span>
+	    			</article>
+	    		</div>
+
+
+    		<div class="contain-md">
+
+	    		<div v-scroll="leaveTopScroll" v-bind:class="{ animIntro: !windowTop }" class="textIntro container">
+	    			
+		    			<div class="row justify-content-center">
+					    	<div  class="align-self-center col-auto">
+					    		<h1>L'institut de Peau-line</h1>
+					    	</div>
+					    	<div  class="col-2">
+					    		<img src='/images/mouth5.svg' width="100px"/>
+					    	</div>
+				    	</div>
+			    	
+			    </div>
+
+	    		<nav v-scroll="leaveTopScroll" v-bind:class="{ navB1Anim: !windowTop }" class="container navB1">
+		    		<div class="row">
+		    			<div class="col-10 col-md-3 divLink mx-auto">
+		    				<div class="linkBtn">L'institut</div>
+		    			</div>
+		    			<div class="col-10 col-md-3 divLink mx-auto">
+		    				<div class="linkBtn">Soins</div>
+		    			</div>
+		    			<div class="col-10 col-md-3 divLink mx-auto">
+		    				<div class="linkBtn">Produits</div>
+		    			</div>
+		    			<div class="col-10 col-md-3 divLink mx-auto">
+		    				<div class="linkBtn">Contact</div>
+		    			</div>
+		    		</div>
+		    	</nav>
+
+				<img-bandeau src_="images/bandeau.svg" :funct="redimensionPict"></img-bandeau>
+
+	    	</div>
+
+		    
+
+		    <nav v-bind:class="{ animnNavB2: miniMenuClicked }" class="navB2 pointer">
+			    <div class="container">
+			    	<div class=row>
+			    		<div v-bind:class="{effectNavB2: miniMenuClicked }" class="divNavB2 col-12 border-bottom my-2">L'institut</div>
+			    		<div v-bind:class="{ effectNavB2: miniMenuClicked }" class="divNavB2 col-12 border-bottom my-2">Soins</div>
+			    		<div v-bind:class="{ effectNavB2: miniMenuClicked }" class="divNavB2 col-12 border-bottom my-2">Produits</div>
+			    		<div v-bind:class="{ effectNavB2: miniMenuClicked }" class="divNavB2 col-12 border-bottom my-2">Contact</div>
+			    	</div>
+			    </div>
+			</nav>
+
+
+    	</div>
+		
+		<div class="d-none d-md-block">
+			<div style="height: 200px;"></div>
+		</div>

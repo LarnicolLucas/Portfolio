@@ -1,0 +1,60 @@
+.reset{
+  background: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.pad1{
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.datepicker-date-display{
+  background-color: #4e8390;
+}
+
+  .input-field input[type=text]:focus + label {
+    color: #4db6ac;
+  }
+
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #4db6ac;
+    box-shadow: 0 1px 0 0 #4db6ac;
+  }
+  
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #4db6ac;
+    box-shadow: 0 1px 0 0 #4db6ac;
+  }
+  .input-field input[type=password].valid {
+    border-bottom: 1px solid #4db6ac;
+    box-shadow: 0 1px 0 0 #4db6ac;
+  }
+
+  .input-field .prefix.active {
+    color: #4db6ac;
+  }
+
+  input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:not(.browser-default), input.valid[type=text]:not(.browser-default):focus, input.valid[type=password]:not(.browser-default), input.valid[type=password]:not(.browser-default):focus, input.valid[type=email]:not(.browser-default), input.valid[type=email]:not(.browser-default):focus, input.valid[type=url]:not(.browser-default), input.valid[type=url]:not(.browser-default):focus, input.valid[type=time]:not(.browser-default), input.valid[type=time]:not(.browser-default):focus, input.valid[type=date]:not(.browser-default), input.valid[type=date]:not(.browser-default):focus, input.valid[type=datetime]:not(.browser-default), input.valid[type=datetime]:not(.browser-default):focus, input.valid[type=datetime-local]:not(.browser-default), input.valid[type=datetime-local]:not(.browser-default):focus, input.valid[type=tel]:not(.browser-default), input.valid[type=tel]:not(.browser-default):focus, input.valid[type=number]:not(.browser-default), input.valid[type=number]:not(.browser-default):focus, input.valid[type=search]:not(.browser-default), input.valid[type=search]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+    border-bottom: 1px solid #4db6ac;
+    -webkit-box-shadow: 0 1px 0 0 #4db6ac;
+    box-shadow: 0 1px 0 0 #4db6ac;
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color:#884ED5;
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+  background-color:#DBD6E1;
+}
+
+.fond{
+  background-image: linear-gradient(to left bottom, #4e8390, #4e8380, #4e8377, #4e8377, #4e8375);
+}

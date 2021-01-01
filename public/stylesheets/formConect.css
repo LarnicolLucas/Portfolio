@@ -1,0 +1,54 @@
+.boxForm {
+
+	padding: 40px;
+	margin: 0;
+
+	width: 400px;
+
+	background: rgba(0, 0, 0, 0.8);
+
+	box-shadow: 0 15px 15px black;
+	border-radius: 15px;
+
+	color: white;
+}
+.boxForm h2{
+	text-align: center;
+	margin: 0 0 30px;
+}
+
+.boxForm .inputUser {
+	position: relative;
+}
+.boxForm .inputUser input {
+	width: 100%;
+	margin-top: 30px;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid white;
+}
+.boxForm .inputUser label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 30px;
+	transition: all .3s ease-out;
+	pointer-events: none;
+}
+.boxForm .inputUser input:focus ~ label,
+.boxForm .inputUser input:valid ~ label{
+	top: -25px;
+	color: #33ccff;
+}
+
+.boxForm input[type="submit"]{
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	margin-top: 20px;
+	background: #33ccff;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+}

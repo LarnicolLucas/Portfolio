@@ -1,0 +1,24 @@
+.showCard{
+    max-height: 500px;
+    opacity: 1;
+
+}
+.hideCard{
+    max-height: 0px;
+    opacity: 0;
+
+}
+.cardDecoration{
+
+    -webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    
+    position: fixed;
+    z-index: -100;
+
+}
+.textListDecoration{
+    cursor: pointer;
+    
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<header>
+	
+		<%- include header -%>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="<%=serveur%>:<%=port%>/socialNet.css">
+
+	</header>
+
+    <body>
+
+    	<%- include bandeau -%>
+
+    	<div class="container my-5">
+    		<div class="row">
+    			<div class="col-6 mx-auto border-bottom text-right">
+    				<h3><b>Soins du visage</b></h3>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-6 mx-auto mt-3 text-center">
+    				<p>Peau-line vous propose 3 produits haut-gamme pour un soins du visage personalisé</p>
+    			</div>
+    		</div>
+    	</div>
+
+      <div class="container my-5">
+        <div class="row selectSoin text-center mx-0 mx-md-5 my-5 my-md-0">
+          <div class="col-12 txtVisage ">Soins Phyts<img src="<%=serveur%>:<%=port%>/logos/phytsL.jpg" width="75px"/></div>
+          <div class="col-12 infoSoinVisage ">
+            <div class="container">
+              <div class="row text-left">
+                <div class="col-12 col-md-8">Nettoyage de peau</div><div class="col-8 col-md-4 prixH border-bottom">1h / 62€</div>
+                <div class="col-12 col-md-8">Soin Apaisant peau sensible</div><div class="col-8 col-md-4 prixH border-bottom">1h / 62€</div>
+                <div class="col-12 col-md-8">Soin détoxifiant</div><div class="col-8 col-md-4 prixH border-bottom">1h / 62€</div>
+                <div class="col-12 col-md-8">Soin Aqua hydratant repulpant</div><div class="col-8 col-md-4 prixH border-bottom">1h / 68€</div>
+                <div class="col-12 col-md-8">Soin Nourrissant huile d’argan</div><div class="col-8 col-md-4 prixH border-bottom">1h / 68€</div>
+                <div class="col-12 col-md-8">Soin D'O Anti-âge</div><div class="col-8 col-md-4 prixH border-bottom">1h / 69€</div>
+                <div class="col-12 col-md-8">Soin anti-age liftant</div><div class="col-8 col-md-4 prixH border-bottom">1h15 / 78€</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row  selectSoin text-center mx-0 mx-md-5 my-5 my-md-0">
+          <div class="col-12 txtVisage ">Soins Clayton Shagal<img src="<%=serveur%>:<%=port%>/logos/CSl.jpg" width="75px"/></div>
+          <div class="col-12 infoSoinVisage ">
+            <div class="container">
+              <div class="row text-left">
+                <div class="col-12 col-md-8">Soin éclat express</div><div class="col-8 col-md-4 prixH border-bottom">40m / 42€</div>
+                <div class="col-12 col-md-8">Soin éclat immédiat</div><div class="col-8 col-md-4 prixH border-bottom">1h / 69€</div>
+                <div class="col-12 col-md-8">Peeling</div><div class="col-8 col-md-4 prixH border-bottom">1h / 69€</div>
+                <div class="col-12 col-md-8">Soin anti-âge intense</div><div class="col-8 col-md-4 prixH border-bottom">1h15 / 85€</div>
+                <div class="col-12 col-md-8">Soin anti âge suprême lissant</div><div class="col-8 col-md-4 prixH border-bottom">1h30 / 95€</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row  selectSoin text-center mx-0 mx-md-5 my-5 my-md-0">
+          <div class="col-12 txtVisage ">Soins LPG Endermolift<img class="ml-3" src="<%=serveur%>:<%=port%>/logos/LPG.jpg" width="65px"/></div>
+          <div class="col-12 infoSoinVisage ">
+            <div class="container">
+              <div class="row text-left">
+                <div class="col-12 text-center border rounded"><b>1 séance 30 min 39€<br/>
+                  Cure d'un mois (2 soins de 30min/semaine) 310€<br/>
+                  Cure de deux mois (2 soins de 30min/semaine) 585€</b></div>
+                <div class="col-12">Soin lift regard</div>
+                <div class="col-12">Soin fermeté activateur de collagène</div>
+                <div class="col-12">Soin redensifiant anti-rides</div>
+                <div class="col-12">Soin lift affinant visage</div>
+                <div class="col-12">Soin régénération cellulaire</div>
+                <div class="col-12">Soin anti-age liftant</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    	<%- include socialNet -%>
+
+
+	    <%- include scriptFooter -%>
+    </body>
+</html>

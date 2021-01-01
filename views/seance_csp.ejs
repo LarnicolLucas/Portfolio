@@ -1,0 +1,172 @@
+<div id="app_seance_csp">
+
+    <section class="container">
+
+      <div class="row" style="margin-top: 25px;">
+        <div class="col s6 offset-s6">
+          <pre-loader v-if="loader.bordereau"></pre-loader>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <titre-page titre="Séance de CSP"></titre-page>
+        </div>
+      </div>
+
+        <div v-if="!openA5 && dates.loaded" class="row">
+
+          <create-select-date
+            v-if="dates.zero_pick"
+            col="s6 offset-s3" 
+            icon="event" 
+            @input="selectDate"
+            :list_select="dates.list_select"
+            :id_list_select="dates.id_list_select"
+          ></create-select-date>
+    
+        </div>
+
+        <div v-if="!openA5 && dates.loaded" class="row">
+
+          <create-select-date
+            v-if="dates.first_pick"
+            col="s6 offset-s3" 
+            icon="event" 
+            @input="askDB"
+            :list_select="dates.list_select2"
+            :id_list_select="dates.id_list_select"
+          ></create-select-date>
+    
+        </div>
+  
+      <div v-show="openA5" class="row">
+             
+  
+          <ul class="collapsible expandable">
+  
+  
+              <li v-if="openAll">
+                <div class="collapsible-header"><i class="material-icons">escalator_warning</i>
+                  <titre-ligne numero="A1" titre="Admission Stage Statutaire"></titre-ligne>
+                </div>
+                <div class="collapsible-body"><span>
+  
+  
+  
+                </span></div>
+              </li>
+  
+  
+              <li v-if="openAll">
+                <div class="collapsible-header"><i class="material-icons">assignment</i>
+                  <titre-ligne numero="A2" titre="Rapport de stage"></titre-ligne>
+                </div>
+                <div class="collapsible-body"><span>
+                  <div class="row">
+                    <div class="col s12">
+  
+  
+                    </div>
+                  </div>              
+                </span></div>
+              </li>
+  
+  
+              <li v-if="openAll">
+                <div class="collapsible-header"><i class="material-icons">school</i>
+                  <titre-ligne numero="A3" titre="Titularisation"></titre-ligne>
+                </div>
+                <div class="collapsible-body"><span>
+  
+                  <div class="row">
+                    <div class="col s12">
+  
+                      
+                    </div>
+                  </div>
+  
+                </span></div>
+              </li>
+  
+              <li v-if="openAll">
+                <div class="collapsible-header"><i class="material-icons">upgrade</i>
+                  <titre-ligne numero="A4" titre="ADP"></titre-ligne>
+                </div>
+                <div class="collapsible-body"><span>
+  
+                  <div class="row">
+                    <div class="col s12">
+  
+  
+                    </div>
+                  </div>
+  
+                </span></div>
+              </li>
+  
+              <li v-if="openA5">
+                <div class="collapsible-header"><i class="material-icons">person_search</i>
+                  <titre-ligne numero="A5" titre="Postulations"></titre-ligne>
+                </div>
+                <div class="collapsible-body"><span>
+  
+                  <div class="row">
+                    <div class="col s12">
+                      
+                      <bordereau-a5-seance 
+                        v-for="keys in inputs.a5_inputs"
+                        :key="keys.id"
+                        v-bind:data="inputs.a5_inputs[keys.id]" 
+                        v-bind:send="sendFunction" 
+                        v-bind:init="initMinitializer" 
+                        v-bind:loader="loader.send[keys.id]"
+                      ></bordereau-a5-seance>
+
+                    </div>
+                  </div>
+  
+                </span></div>
+              </li>
+  
+              <li v-if="openAll">
+                <div class="collapsible-header"><i class="material-icons">directions_walk</i>
+                  <titre-ligne numero="A6" titre="Mutation"></titre-ligne>
+                </div>
+                <div class="collapsible-body"><span>
+  
+                  <div class="row">
+                    <div class="col s12">
+  
+  
+                    </div>
+                  </div>
+  
+                </span></div>
+              </li>
+  
+              <li v-if="openAll">
+                <div class="collapsible-header"><i class="material-icons">euro</i>
+                  <titre-ligne numero="A7" titre="Avancements Particuliers"></titre-ligne>
+                </div>
+                <div class="collapsible-body"><span>
+  
+                  <div class="row">
+                    <div class="col s12">
+  
+  
+                    </div>
+                  </div>
+  
+                </span></div>
+              </li>
+  
+  
+            </ul>
+  
+      </div>
+  
+    </section>
+  
+  </div>
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('header') -%>
+</head>
+<body>
+
+    <div class="container" id="app_nouvel_utilisateur">
+
+        <div class="row" style="margin-top:120px;">
+            <div class="col s12 m6 offset-m3">
+                
+
+
+                    <new-login 
+                        :login="login" 
+                        :password0="password0"
+                        :password1="password1"
+                        :send="sendFunction"
+
+                        @wrongpass="wrongPassEvent"
+                    ></new-login>
+
+                
+            </div>
+        </div>
+        <div class="row" v-if="!different_password">
+            <div class="col s12 m6 offset-m4">
+                <button @click="sendFunction" class="btn waves-effect waves-light" style="margin-bottom: 25px;">Envoyer
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+        <div v-if="not_valid" class="row">
+            <div class="col s12 m6 offset-m4">
+                <p> {{error_msg}} </p>
+            </div>
+        </div>
+
+    </div>
+
+    <%- include('footer') -%>
+    
+
+</body>
+</html>

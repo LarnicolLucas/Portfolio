@@ -1,0 +1,75 @@
+
+
+<main id="app_accueil" 
+:style="
+  'background : '+background_color+'; color: '+text_color+';'"
+>
+
+<section class="container">
+  <%- include('intro') %>
+</section>
+
+
+<section class="container">   
+  <%- include('first_pres') %>
+</section>
+
+<divizer></divizer>
+
+<section class="container">
+  <%- include('skills') %>
+</section>
+
+<divizer></divizer>
+
+<section class="container">
+    <%- include('projects') %>
+</section>
+
+<divizer></divizer>
+
+<section class="container">
+    <%- include('pres') %>
+</section>
+
+
+
+
+  <footer
+    :style="'background: '+ text_color +';'"
+    class="page-footer"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 
+            :style="'color: '+ background_color +';'"
+          >Made And Host by <br>  Larnicol Lucas </br></h5>
+        </div>
+        <div class="col l6 s12">
+            <div class="row center-align">
+
+                <div class="col s12">
+                    <h5 
+                    :style="'color: '+ background_color +';'"
+                    class="center-align">Links</h5>
+                </div>
+
+                <div class="col s2 m4 l4"></div>
+
+                <icon-link v-for="keys in link_icon" :props="keys" :key="keys.id"></icon-link>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div
+        :style="'color: '+ background_color +';'" 
+        class="container">
+      © 2020
+      </div>
+    </div>
+  </footer>
+</main>

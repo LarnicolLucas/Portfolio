@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('header') -%>
+</head>
+<body>
+
+    <div class="container" id="app_login">
+
+        <div class="row" style="margin-top:120px;">
+            <div class="col s12 m6 offset-m3">
+                
+
+
+                    <login 
+                        :login="login" 
+                        :password="password" 
+                        :send="sendFunction"
+                    ></login>
+
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 offset-m4">
+                <button @click="sendFunction" class="btn waves-effect waves-light" style="margin-bottom: 25px;">Envoyer
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+        <div v-if="not_valid" class="row">
+            <div class="col s12 m6 offset-m4">
+                <p> {{error_msg}} </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 center-align">
+
+                <button class="btn pulse" @click="skip">Skip Authentication</button>
+
+            </div>
+        </div>
+
+        <div class="fixed-action-btn">
+            <a href="<%=adress%>/newlogin" class="btn-floating btn-large tooltipped" data-position="top" data-tooltip="Ajouter un utilisateur">
+              <i class="large material-icons">add</i>
+            </a>
+        </div>
+
+    </div>
+
+    <%- include('footer') -%>
+    
+
+</body>
+</html>

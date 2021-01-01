@@ -1,0 +1,43 @@
+
+.icon img{
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.icon .txt {
+	text-align: left;
+	position: absolute;
+	color: white;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 1px;
+}
+.icon .txt p{
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	position: relative;
+	margin: 0 0 0 10px;
+	opacity: 0;
+}
+.icon .txt::before{
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	content:'';
+	position: absolute;
+	background-image: linear-gradient(to left bottom, #d54e54, #e57a98, #e7aace, #ead7ef, #ffffff);
+	width: 140%;
+	height: 140%;
+	transform: rotate(13deg);
+	top: -50%;
+	left: -200%;
+}
+.icon:hover .txt p{
+	opacity: 1;
+}
+.icon:hover .txt::before{
+	top: -20%;
+	left: -60%;
+}
+.icon:hover img{
+	opacity : 0;
+}

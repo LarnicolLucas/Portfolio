@@ -1,0 +1,179 @@
+<div id="app_csp">
+
+  <section class="container">
+
+    <div class="row">
+           
+
+        <ul class="collapsible popout">
+
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">escalator_warning</i>
+                <titre-ligne numero="1" titre="Admission Stage Statutaire"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <new-bordereau-no-db v-bind:list="null" ax="a1_inputs" v-bind:function_list="function_list"></new-bordereau-no-db>
+
+
+              </span></div>
+            </li>
+
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">assignment</i>
+                <titre-ligne numero="2" titre="Rapport de stage"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+                <div class="row">
+                  <div class="col s12">
+
+                    <new-bordereau v-bind:function_list="function_list" ax="a2_inputs"></new-bordereau>
+
+                  </div>
+                  <div class="col s2">
+
+
+                    <pre-loader v-if="loader.a2_inputs"></pre-loader>
+
+                  
+                  </div>
+                </div>              
+              </span></div>
+            </li>
+
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">school</i>
+                <titre-ligne numero="3" titre="Titularisation"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <new-bordereau v-bind:function_list="function_list" ax="a3_inputs"></new-bordereau>
+                    
+                  </div>
+                <div class="col s2">
+
+
+                  <pre-loader v-if="loader.a3_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">upgrade</i>
+                <titre-ligne numero="4" titre="ADP"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <new-bordereau v-bind:function_list="function_list" ax="a4_inputs"></new-bordereau>
+
+                  </div>
+                <div class="col s2">
+
+
+                     <pre-loader v-if="loader.a4_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">person_search</i>
+                <titre-ligne numero="5" titre="Postulations"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+                    
+                    <new-bordereau v-bind:function_list="function_list" ax="a5_inputs"></new-bordereau>
+
+
+                  </div>
+                <div class="col s2">
+
+
+                  <pre-loader v-if="loader.a5_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">directions_walk</i>
+                <titre-ligne numero="6" titre="Mutation"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <new-bordereau v-bind:function_list="function_list" ax="a6_inputs"></new-bordereau>
+
+                  </div>
+                <div class="col s2">
+
+
+                     <pre-loader v-if="loader.a6_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">euro</i>
+                <titre-ligne numero="7" titre="Avancements Particuliers"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <new-bordereau v-bind:function_list="function_list" ax="a7_inputs"></new-bordereau>
+
+                  </div>
+                <div class="col s2">
+
+
+                     <pre-loader v-if="loader.a7_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+
+          </ul>
+
+    </div>
+
+  </section>
+
+</div>
+
+
+
+

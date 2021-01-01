@@ -1,0 +1,135 @@
+<div id="app_statistique_agent">
+
+    <section class="container">
+
+      <div class="row">
+        <div class="col s12">
+          <titre-page :titre="'Statistique Agent'+genre[data_serv[0].sexe]"></titre-page>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+
+
+          <collection-titre v-if="active_components" :list="statistique_agent.nom_prenom"></collection-titre>
+
+
+        </div>
+        <div class="col s12 m6 right-align">
+
+          <circle-percent
+            v-if="active_components"
+            label="Taux d'avancement"
+            :value="this.statistique_agent.ratioAvancementAgent"
+            size= "60"
+            :color= "this.circle_color"
+            unity= ""
+            circle_percent= 100
+          >
+          </circle-percent>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+
+          <collection v-if="active_components" :list="statistique_agent.service"></collection>
+
+        </div>
+
+        <div class="col s12 m6 center-align" style="margin-top: 10px; margin-bottom: 10px;">
+
+          <switch-m @changeavg="changeAVG"></switch-m>
+
+        </div>
+        
+        <div class="col s12 m6">
+        
+          
+          <global-circle-and-average
+            v-if="active_components"
+
+            :refresh="activ_components_refresh"
+
+            :circle0="statistique_agent.gf" 
+            :circle1="statistique_agent.nr"
+            :circle2="statistique_agent.dernier_nr"
+
+            :circle0b="statistique_agent.gf_moyen"
+            :circle1b="statistique_agent.nr_moyen"
+            :circle2b="statistique_agent.dernier_nr_moyen"
+          ></global-circle-and-average>
+              
+        </div>
+        <div class="col s12 m6">
+
+
+          <global-circle-and-average
+            v-if="active_components"
+
+            :refresh="activ_components_refresh"
+
+            :circle0="statistique_agent.age_annee" 
+            :circle1="statistique_agent.date_admission"
+            :circle2="statistique_agent.date_ieg"
+
+            :circle0b="statistique_agent.age_moyen"
+            :circle1b="statistique_agent.date_admission_moyen"
+            :circle2b="statistique_agent.date_ieg_moyen"
+          ></global-circle-and-average>
+            
+        </div>
+        <div class="col s12 m6">
+          
+          <circle-percent 
+            v-if="active_components"
+            label="Pourcentage de Femmes"
+            :value="statistique_agent.rapport_femme"
+            size= "75"
+            :color= "this.circle_color"
+            unity= "%"
+            :circle_percent="statistique_agent.rapport_femme"
+          >
+          </circle-percent>
+
+        </div>
+      </div>
+
+
+      <div class="row hide-on-small-only">
+        <div class="col s12">
+          <ul class="collapsible" @click.once="activateToolTips">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">linear_scale</i>Historique</div>
+              <div class="collapsible-body"><span>
+
+                <%- include('historique') %>
+
+                <p v-for="keys in histo" :key="keys.id"> {{ keys.label }} : {{ keys.value }} </p>
+                
+              </span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row hide-on-med-and-up">
+        <div class="col s12 center-align">
+          <h3>Historique</h3>
+        </div>
+        <div class="col s12">
+
+          <%- include('historique_mobile') %>
+
+        </div>
+      </div>
+      
+    </section>
+    
+</div>
+
+<script>
+  const DATA_FROM_SERV = <%-data%>;
+</script>

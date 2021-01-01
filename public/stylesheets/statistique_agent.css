@@ -1,0 +1,139 @@
+.box_circle_percent{
+
+	width: 300px;      /*NoResponsive*/
+	height: 400px;		/*NoResponsive*/
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+
+}
+.box_circle_percent .bcp_percent{
+	position: relative;
+	width: 150px;  /*NoResponsive*/
+	height: 150px;   /*NoResponsive*/
+}
+.box_circle_percent .bcp_percent .bcp_svg{
+	position: relative;
+	width: 150px;   /*NoResponsive*/
+	height: 150px;   /*NoResponsive*/
+}
+.box_circle_percent .bcp_percent .bcp_svg .bcp_circle{
+	position: relative;
+	width: 150px;   /*NoResponsive*/
+	height: 150px;    /*NoResponsive*/
+	fill: none;
+	stroke-width: 10;  /*NoResponsive*/
+	stroke: #000;
+	transform: translate(5px, 5px);   /*NoResponsive*/
+	stroke-dasharray: 440;   /*NoResponsive*/
+	stroke-dashoffset: 440;   /*NoResponsive*/
+}
+
+.box_circle_percent .bcp_percent .bcp_svg .bcp_circle1{
+	stroke-dashoffset: 0;
+	stroke: #f3f3f3;
+}
+
+.box_circle_percent .bcp_percent .bcp_svg .bcp_circle2{
+	stroke-dashoffset: 200;  /*NoResponsive + value*/
+	stroke: #03a9f4;
+}
+.box_circle_percent .bcp_percent .bcp_number{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #111;
+}
+.box_circle_percent .bcp_percent .bcp_number .bcp_number_only {
+	font-size: 48px; 		/*NoResponsive*/
+}
+.box_circle_percent .bcp_percent .bcp_number .bcp_number_percent{
+	font-size: 24px;		/*NoResponsive*/
+}
+.box_circle_percent .bcp_text {
+	color: #999;
+	font-weight: 700;		/*NoResponsive*/
+	letter-spacing: 1px;	/*NoResponsive*/
+}
+
+
+
+.avg-enter-active, .avg-leave-active {
+	transition: all .15s;
+  }
+  .avg-enter, .avg-leave-to /* .fade-leave-active below version 2.1.8 */ {
+	opacity: 0;
+}
+
+.container_histo{
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+
+.point_histo{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.trait{
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 100%;
+	height: 5px;
+	background-color: #f44336;
+	border-radius: 5px;
+
+}
+
+.container_histo_mobile{
+	position: relative;
+	width: 100%;
+	height: 635px;
+}
+
+.point_histo_mobile{
+	position: absolute;
+	margin-bottom: 50px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 0;
+}
+
+.trait_mobile{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 4px;
+	height: 100%;
+	background-color: #f44336;
+	border-radius: 5px;
+
+}
+
+.point_histo_bubble{
+
+	cursor: pointer;
+
+	background: #ff416c; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff416c, #ff4b2b);
+
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+
+}

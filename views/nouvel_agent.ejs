@@ -1,0 +1,46 @@
+<div id="app_nouvel_agent">
+
+    <section class="container">
+
+        <div v-if="!loader" class="row">
+            <div class="col s12">
+              <titre-page titre="Ajout d'agent&#183;es"></titre-page>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col s12">
+
+                <ajout-agent
+
+                    v-bind:select_information="select_information"
+
+                    v-bind:data="data_agent_client_side" 
+                    v-bind:send="sendInfo" 
+                    v-bind:init="initMinitializer" 
+                    v-bind:loader="loader"
+
+                ></ajout-agent>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 offset-s6">
+                <pre-loader v-if="loader"></pre-loader>
+            </div>
+        </div>
+
+    </section>
+
+    <modal-error v-bind:message="error_msg" titre="Des erreurs existes dans le formulaire"></modal-error>
+    <modal-info 
+        v-bind:message="info.msg" 
+        v-bind:titre="info.titre" 
+        v-bind:cancel="info.cancel" 
+        v-bind:sendfunction="sendFunction"
+        v-bind:adress="ADRESS+'/index/agents'"
+        ></modal-info>
+
+
+</div>

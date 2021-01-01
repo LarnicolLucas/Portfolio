@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:url(#SVGID_2_);stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:url(#SVGID_3_);stroke:#000000;stroke-miterlimit:10;}
+	.st3{fill:url(#SVGID_4_);stroke:#000000;stroke-miterlimit:10;}
+	.st4{display:none;}
+	.st5{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st6{stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="Calque_3">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-3.1276" y1="-6.5583" x2="156" y2="-6.5583">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#B7C6CE"/>
+	</linearGradient>
+	<line class="st0" x1="-3.1" y1="-7" x2="156" y2="-6.1"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-4" y1="154.5583" x2="155.1276" y2="154.5583">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#B7C6CE"/>
+	</linearGradient>
+	<line class="st1" x1="-4" y1="154.1" x2="155.1" y2="155"/>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-4" y1="73.5583" x2="-3.1276" y2="73.5583">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#B7C6CE"/>
+	</linearGradient>
+	<line class="st2" x1="-3.1" y1="-7" x2="-4" y2="154.1"/>
+	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="155.1276" y1="74.4417" x2="156" y2="74.4417">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#B7C6CE"/>
+	</linearGradient>
+	<line class="st3" x1="156" y1="-6.1" x2="155.1" y2="155"/>
+</g>
+<g id="Calque_1" class="st4">
+	
+		<image style="display:inline;overflow:visible;" width="500" height="500" xlink:href="Institut peau line/icones_SVG/epilation.jpg"  transform="matrix(0.24 0 0 0.24 15 15)">
+	</image>
+</g>
+<g id="Calque_2">
+	<path class="st5" d="M138.5,45"/>
+	<line class="st5" x1="15" y1="99.8" x2="24.3" y2="108"/>
+	<line class="st5" x1="137.9" y1="44.2" x2="24.3" y2="108"/>
+	<line class="st5" x1="15" y1="99.8" x2="18.5" y2="98.2"/>
+	<line class="st6" x1="76.5" y1="65.5" x2="24.3" y2="101.5"/>
+	<line class="st5" x1="18.5" y1="98.2" x2="22" y2="101.5"/>
+	<line class="st6" x1="24.3" y1="101.5" x2="22" y2="101.5"/>
+	<line class="st5" x1="17.3" y1="86.7" x2="20.8" y2="86.7"/>
+	<line class="st5" x1="23.1" y1="72" x2="15" y2="85.1"/>
+	<line class="st5" x1="17.3" y1="86.7" x2="15" y2="85.1"/>
+	<line class="st5" x1="20.8" y1="86.7" x2="25.4" y2="78.5"/>
+	<line class="st5" x1="23.1" y1="72" x2="127.5" y2="36"/>
+	<path class="st5" d="M127.5,36c10.2,0.2,12.5,4.9,10.4,8.2"/>
+	<line class="st5" x1="25.4" y1="78.5" x2="76.5" y2="65.5"/>
+	<line class="st6" x1="137.9" y1="44.2" x2="76.5" y2="65.5"/>
+	<line class="st5" x1="22" y1="101.5" x2="18.5" y2="103.1"/>
+	<line class="st6" x1="22" y1="101.5" x2="25.4" y2="104.7"/>
+	<line class="st6" x1="137.9" y1="44.2" x2="25.4" y2="104.7"/>
+</g>
+</svg>

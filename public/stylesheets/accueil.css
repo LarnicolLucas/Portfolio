@@ -1,0 +1,158 @@
+
+
+.margin_TB{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.margin_TB_XL{
+    margin-top: 235px;
+    margin-bottom: 235px;
+}
+.margeTop{
+    margin-top: 150px;
+}
+
+.project_description{
+    color: #fff;
+    padding: 15px;
+}
+
+.button_perso {
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    border-radius: 7px;
+}
+
+.button_perso:hover{
+    transform: scale(1.08);
+    color: #4e8390;
+}
+.fontAfter{
+    width: 135px;
+    height: 135px;
+}
+
+.container_first_pres{
+    position: relative;
+}
+
+.shape_pres{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+}
+
+.font {
+
+    cursor: pointer;
+
+    transition: all 0.1s ease-in-out;
+
+    filter: grayscale(75%);
+    -o-filter : grayscale(75%); 
+    -moz-filter : grayscale(75%);  
+    -webkit-filter : grayscale(75%);  
+    -ms-filter : grayscale(75%);  
+    -khtml-filter : grayscale(75%);
+}
+
+.font_effect_hover{
+    transform: scale(3);
+    filter: grayscale(0%);
+    -o-filter : grayscale(0%); 
+    -moz-filter : grayscale(0%);  
+    -webkit-filter : grayscale(0%);  
+    -ms-filter : grayscale(0%);  
+    -khtml-filter : grayscale(0%);
+}
+
+.iconAfter{
+    animation: sizeBonce 0.3s ease-out forwards;
+    transform: scale(1);
+
+    filter: grayscale(0%);
+    -o-filter : grayscale(0%); 
+    -moz-filter : grayscale(0%);  
+    -webkit-filter : grayscale(0%);  
+    -ms-filter : grayscale(0%);  
+    -khtml-filter : grayscale(0%);  
+}
+.iconBefore{
+    filter: grayscale(100%);
+    -o-filter : grayscale(100%); 
+    -moz-filter : grayscale(100%);  
+    -webkit-filter : grayscale(100%);  
+    -ms-filter : grayscale(100%);  
+    -khtml-filter : grayscale(100%)
+}
+
+
+/*//////////////////////////////////////////////AFTER*/
+
+.pres_frame{
+    border-radius: 15px;
+    padding: 1em;
+    text-align: justify;
+    margin-top: -15px;
+    background: #fff;
+}
+
+@keyframes sizeBonce {
+    0%{transform: scale(1)}
+    50%{transform: scale(1.3)}
+    100%{transform: scale(1)}
+
+}
+
+.parallax-container {
+    height: 400px;
+}
+
+.container_image_project{
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    max-height: 150px;
+}
+
+.image_project{
+
+    transition: all 0.25s ease-out;
+
+    border-radius: 7px;
+
+}
+
+.image_project_effect{
+    border-radius: 7px;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.15s ease-out;
+    transform: translateX(-120%);
+}
+
+.slide{
+    transform: translateX(0%);
+    
+}
+
+.scroll_slide_before {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: all 0.35s ease-out;
+}
+
+.scroll_slide_after {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.effect_icon_hide{
+    opacity: 0;
+}

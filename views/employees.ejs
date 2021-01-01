@@ -1,0 +1,41 @@
+<div id="app_agent" class="container">
+
+  <div class="row" style="margin-top: 25px;">
+    <div class="col offset-s6">
+  
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <titre-page titre="Search by name"></titre-page>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m8 l6 offset-m2 offset-l3">
+
+      <input-m-select
+         
+        v-bind:list="list_by_name.list.array" 
+
+        v-bind:class_for_auto_complete="list_by_name.class" 
+        v-bind:col="list_by_name.col" 
+        v-bind:icon="list_by_name.icon" 
+        placeholder="Employee name" 
+        v-model="list_by_name.value"
+
+        @input="mise_a_jour_value"
+      ></input-m-select>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <blockquote>
+        For confidentiality reasons, names are changed by randoms names<blockquote>
+    </div>
+  </div>
+
+</div>

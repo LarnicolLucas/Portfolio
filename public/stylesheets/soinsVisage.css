@@ -1,0 +1,44 @@
+.selectSoin{
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	border-bottom: 1px solid black;
+	text-align: center;
+	overflow: hidden;
+}
+.selectSoin .txtVisage{
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	padding-left : 0;
+	font-size: 25px;
+}
+.selectSoin .infoSoinVisage .prixH{
+		text-align: right;
+}
+.selectSoin .infoSoinVisage{
+	display: block;
+}
+.opacity0 {
+	opacity: 0.2;
+}
+.opacity1 {
+	opacity: 1;
+}
+
+@media (min-width: 768px) {
+	.selectSoin .infoSoinVisage {
+		-webkit-transition: all .3s ease-out;
+		transition: all .3s ease-out;
+		height: 0px;
+	}
+	.selectSoin:hover .txtVisage{
+		font-weight: bold;
+		padding-left : 200px;
+		font-size: 15px;
+		margin-bottom: 15px;
+	}
+	.selectSoin:hover .infoSoinVisage {
+		display: block;
+		min-height: 225px;
+		
+	}
+}

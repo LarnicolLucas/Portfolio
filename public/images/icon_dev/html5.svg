@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Calque_1"
+   x="0px"
+   y="0px"
+   width="362.79999"
+   height="411.39999"
+   viewBox="0 0 362.79999 411.39999"
+   xml:space="preserve"
+   sodipodi:docname="html5.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
+   id="metadata21"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>HTML5 Logo</dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs19" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   id="namedview17"
+   showgrid="false"
+   inkscape:zoom="1.6210938"
+   inkscape:cx="181.4"
+   inkscape:cy="204.7494"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Calque_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#E44D26;}
+	.st2{fill:#F16529;}
+	.st3{fill:#EBEBEB;}
+</style>
+<title
+   id="title4">HTML5 Logo</title>
+<path
+   class="st0"
+   d="m 33.8,-100.6 h 23 v 22.8 H 78 v -22.8 h 23 v 69 H 78 v -23 H 57 v 23 H 33.8 m 97.6,-46 h -20.3 v -23 h 63.7 v 23 h -20.4 v 46 h -23 m 53.5,-69 H 209 l 14.8,24.3 14.8,-24.3 h 24.1 v 69 h -23 V -65.8 L 223.6,-41 207.5,-65.8 v 34.2 h -22.6 m 89.2,-69 h 23 v 46.2 h 32.6 v 22.8 h -55.6"
+   id="path6" />
+<path
+   class="st1"
+   d="M 33,370.4 0,0 h 362.8 l -33,370.2 -148.7,41.2"
+   id="path8" />
+<path
+   class="st2"
+   d="M 181.4,379.9 V 30.4 h 148.3 l -28.3,316"
+   id="path10" />
+<path
+   class="st3"
+   d="m 67.4,75.7 h 114 v 45.4 h -64.2 l 4.2,46.5 h 60 v 45.3 H 79.8 m 2,22.8 h 45.6 l 3.2,36.3 50.8,13.6 V 333 L 88.2,307"
+   id="path12" />
+<path
+   class="st0"
+   d="M 295,75.7 H 181.2 v 45.4 h 109.6 m -4.1,46.5 H 181.2 V 213 h 56 l -5.3,59 -50.7,13.6 v 47.2 l 93,-25.8"
+   id="path14" />
+</svg>

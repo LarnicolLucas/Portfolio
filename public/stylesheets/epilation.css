@@ -1,0 +1,13 @@
+.reduc {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	text-align: center;
+	width: 60%;
+	transform: rotate(-30deg);
+	background: white;
+	margin-top: 50px;
+	margin-left: 25px;
+}
+td {
+	font-size: 20px;
+}

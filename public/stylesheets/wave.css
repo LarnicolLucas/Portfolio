@@ -1,0 +1,233 @@
+
+.intro{
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    font-size: 2em;
+}
+.canvas{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+
+    border-radius: 5px;
+}
+
+.synthetiseur{
+    margin-top: 55px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.keyboard{
+    display: inline-block;
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    position: relative;
+}
+.white{
+
+
+    width: 10%; /*black * 1.66*/
+    padding-top: 50%;
+
+    background: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(30deg, rgba(255,255,255,1) 40%, rgba(150,150,150,1) 100%);
+
+    border: 1px solid black;
+
+    z-index: 0;
+}
+
+.black{
+
+    width: 6%;
+    padding-top: 30%; /*width * 5*/
+
+    border: 1px solid black;
+
+    vertical-align: top;
+    margin-left: -3.8%;
+    margin-right: -3.8%;
+    background: rgb(0,0,0);
+    background: linear-gradient(30deg, rgba(0,0,0,1) 80%, rgba(150,150,150,1) 100%);
+
+    z-index: 1;
+}
+.buttons_select_container{
+
+    border-radius: 5px;
+
+}
+.potar_container{
+    text-align: center;
+}
+.potar_block{
+    
+    display: inline-block;
+    margin: 15px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+.potar{
+
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(30deg, rgba(0,0,0,1) 57%, rgba(150,150,150,1) 100%);
+    
+    position: relative;
+}
+.potar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 5%);
+    width: 10%;
+    height: 30%;
+    border-radius: 7px;
+    z-index: 10;
+    background: #fff;
+}
+.noSelect {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+.octave_buttons{
+
+    display: inline-block;
+    text-align: center;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+.save_wave{
+    cursor: pointer;
+}
+.trash_custom{
+    
+    cursor: pointer;
+}
+
+.buttons_filters{
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.canvas_equalizer{
+
+    width: 100%;
+
+    border: 1px solid black;
+
+    border-radius: 5px;
+
+}
+.label_equalizer{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.sequencer_container_general{
+
+    text-align: center;
+
+}
+
+.sequencer_container{
+
+    border:1px solid #9c27b0;
+
+    border-radius: 10px;
+
+    overflow: scroll;
+
+    height: 500px;
+
+}
+.notes_sequencer{
+    border:1px solid black;
+
+    display: inline-block;
+
+    width: 10%;
+    height: 25px;
+
+}
+.notes_times{
+    border: 1px solid black;
+
+    display: inline-block;
+
+    width: 5%;
+    height: 25px;
+
+    cursor: pointer;
+}
+.active_note {
+    background: #9c27b0;
+}
+
+.sequencer_white_note {
+    
+    background: #fff;
+}
+.sequencer_black_note {
+    background: #000;
+}
+.separation_class{
+    width: 0px;
+    height: 100%;
+
+    border: 2px solid #9c27b0;
+}
+.class_times_demi{
+    background: #e1bee7;
+}
+
+.sequencer_buton_play{
+    margin:10px;
+   
+}
+.container_drums{
+    border: 1px solid black;
+    border-radius: 10px;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.button_drum{
+
+    transition: all 0.3s ease-out;
+
+    width:50%;
+    padding-top: 50%;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+    border: 1px solid black;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_drum:hover{
+    background: #9c27b0;
+}

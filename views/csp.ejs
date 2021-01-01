@@ -1,0 +1,244 @@
+<div id="app_csp">
+
+  <section class="container">
+
+    <div class="row" style="margin-top: 25px;">
+      <div class="col s6 offset-s6">
+        <pre-loader v-if="page_load"></pre-loader>
+      </div>
+    </div>
+
+    <div v-if="!date_csp_is_select" class="row">
+      <div class="col s12">
+        <titre-page titre="CSP"></titre-page>
+      </div>
+    </div>
+
+    <div v-show="!date_csp_is_select" class="row">
+
+      <input-m-date-picker v-model="date_csp" @input="selecteDate" col="s6 offset-s3" icon="calendar_today" placeholder="Choisissez une date de CSP"></input-m-date-picker>
+
+    </div>
+
+    <div v-if="date_csp_is_select" class="row">
+      <div class="col s12">
+        <titre-page :titre="'CSP du '+date_csp"></titre-page>
+      </div>
+    </div>
+
+    <div v-show="date_csp_is_select" class="row">
+           
+
+        <ul class="collapsible popout">
+
+
+            <li>
+              <div class="collapsible-header"><i class="material-icons">escalator_warning</i>
+                <titre-ligne numero="A1" titre="Admission Stage Statutaire"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <bordereau-a1 
+                v-bind:key="a1_key" 
+
+                v-bind:select_information="select_information" 
+
+                v-bind:data="inputs.a1_inputs" 
+                v-bind:send="sendFunction" 
+                v-bind:init="initMinitializer"
+                ></bordereau-a1>
+
+
+              </span></div>
+            </li>
+
+
+            <li @click.once="askDB('a2_inputs')">
+              <div class="collapsible-header"><i class="material-icons">assignment</i>
+                <titre-ligne numero="A2" titre="Rapport de stage"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+                <div class="row">
+                  <div class="col s12">
+
+                    <bordereau-a2 v-if="!loader.a2_inputs" v-bind:data="inputs.a2_inputs" v-bind:send="sendFunction" v-bind:init="initMinitializer"></bordereau-a2>
+
+                  </div>
+                  <div class="col s2">
+
+
+                    <pre-loader v-if="loader.a2_inputs"></pre-loader>
+
+                  
+                  </div>
+                </div>              
+              </span></div>
+            </li>
+
+
+            <li @click.once="askDB('a3_inputs')">
+              <div class="collapsible-header"><i class="material-icons">school</i>
+                <titre-ligne numero="A3" titre="Titularisation"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <bordereau-a3
+
+                    v-bind:select_information="select_information"
+
+                    v-if="!loader.a3_inputs" 
+                    v-bind:data="inputs.a3_inputs" 
+                    v-bind:send="sendFunction" 
+                    v-bind:init="initMinitializer" 
+                    v-bind:autofillotherinputs="autoFillOtherInputs"></bordereau-a3>
+
+                    
+                  </div>
+                  <div class="col s2">
+
+
+                    <pre-loader v-if="loader.a3_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li @click.once="askDB('a4_inputs')">
+              <div class="collapsible-header"><i class="material-icons">upgrade</i>
+                <titre-ligne numero="A4" titre="ADP"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <bordereau-a4 v-if="!loader.a4_inputs" v-bind:data="inputs.a4_inputs" v-bind:send="sendFunction" v-bind:init="initMinitializer" v-bind:autofillotherinputs="autoFillOtherInputs"></bordereau-a4>
+
+
+                  </div>
+                <div class="col s2">
+
+
+                     <pre-loader v-if="loader.a4_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li @click.once="askDB('a5_inputs')">
+              <div class="collapsible-header"><i class="material-icons">person_search</i>
+                <titre-ligne numero="A5" titre="Postulations"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+
+                <div class="row">
+                  <div class="col s12">
+                    
+                    <bordereau-a5 
+                      v-bind:select_information="select_information"
+
+                      v-if="!loader.a5_inputs" 
+                      v-bind:data="inputs.a5_inputs" 
+                      v-bind:send="sendFunction" 
+                      v-bind:init="initMinitializer" 
+                      v-bind:autofillotherinputs="autoFillOtherInputs" 
+                      v-bind:addpostulant="addPostulant"
+                      v-bind:deletepostulant="deletePostulant"
+                      v-bind:list_id_agent="agents_list_id.agents_statutaires"
+                      v-bind:numero_publication_list="numero_publication_list_for_auto_complete"
+                    ></bordereau-a5>
+
+
+                  </div>
+                <div class="col s2">
+
+
+                  <pre-loader v-if="loader.a5_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li @click.once="askDB('a6_inputs')">
+              <div class="collapsible-header"><i class="material-icons">directions_walk</i>
+                <titre-ligne numero="A6" titre="Mutation"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <bordereau-a6
+                    v-bind:select_information="select_information"
+
+                    v-if="!loader.a6_inputs" 
+                    v-bind:data="inputs.a6_inputs" 
+                    v-bind:send="sendFunction" 
+                    v-bind:init="initMinitializer" 
+                    v-bind:autofillotherinputs="autoFillOtherInputs"></bordereau-a6>
+
+                  </div>
+                <div class="col s2">
+
+
+                     <pre-loader v-if="loader.a6_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+            <li @click.once="askDB('a7_inputs')">
+              <div class="collapsible-header"><i class="material-icons">euro</i>
+                <titre-ligne numero="A7" titre="Avancements Particuliers"></titre-ligne>
+              </div>
+              <div class="collapsible-body"><span>
+
+                <div class="row">
+                  <div class="col s12">
+
+                    <bordereau-a7 v-if="!loader.a7_inputs" v-bind:data="inputs.a7_inputs" v-bind:send="sendFunction" v-bind:init="initMinitializer" v-bind:autofillotherinputs="autoFillOtherInputs"></bordereau-a7>
+
+                  </div>
+                  <div class="col s2">
+
+
+                    <pre-loader v-if="loader.a7_inputs"></pre-loader>
+
+                
+                  </div>
+                </div>
+
+              </span></div>
+            </li>
+
+
+          </ul>
+
+    </div>
+
+  </section>
+
+    <modal-error v-bind:message="error_msg" titre="Des erreurs existes dans le formulaire"></modal-error>
+    
+
+</div>
+
+
+
+

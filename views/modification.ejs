@@ -1,0 +1,51 @@
+<div id="app_modification">
+
+    <section class="container">
+
+        <div v-if="!loader" class="row">
+            <div class="col s12">
+              <titre-page titre="Modification d'agent"></titre-page>
+            </div>
+        </div>
+
+        <div v-if="!loader" class="row">
+
+            <div class="col s12">
+
+                <modification-agent
+                    v-if="initialisation"
+
+                    v-bind:select_information="select_information"
+
+                    v-bind:data="data_agent_client_side" 
+                    v-bind:send="sendInfo" 
+                    v-bind:init="initMinitializer" 
+                    v-bind:loader="loader"
+
+                ></modification-agent>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 offset-s6">
+                <pre-loader v-if="loader"></pre-loader>
+            </div>
+        </div>
+
+    </section>
+
+    <modal-error v-bind:message="error_msg" titre="Des erreurs existes dans le formulaire"></modal-error>
+    <modal-info 
+        v-bind:message="info.msg" 
+        v-bind:titre="info.titre" 
+        v-bind:cancel="info.cancel" 
+        v-bind:sendfunction="sendFunction"
+        v-bind:adress="ADRESS+'/index/agents'"
+    ></modal-info>
+
+
+</div>
+
+<script>
+    const DATA_FROM_SERV = <%-JSON.stringify(data)%>;
+</script>

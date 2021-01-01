@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<header>
+
+	
+		<%- include ('header_p.ejs') -%>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="stylesheets/socialNet.css">
+
+		<link rel="stylesheet" href="stylesheets/formConect.css">
+
+	</header>
+
+    <body>
+
+    <div id="app">
+
+		<%- include ('bandeau.ejs') -%>
+
+
+
+    	<div class="container rounded my-5">
+
+    		<div class="row">
+    			<div class="col-6 mx-auto border-bottom text-center">
+    				<h2><b>Institut de beauté BIO</b></h2>
+    				<i class="material-icons">spa</i>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-6 mx-auto my-5 text-center">
+    				<p><i>Horaire d'ouverture : du Mardi au Samedi: 10H-19H</i></p>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="container">
+
+
+    		<div class="row mb-5 mx-auto text-center">
+
+    			<div v-scroll="handleScroll" class="col-7 col-md-3 text-center mx-auto ml-md-5 my-3 icon transScroll">
+    				<h4 class="text-center border-bottom position-relative">Epilation</h4>
+    				<div class="position-relative">
+    					<div class="txt">
+    						<p>Epilation<br/>Description ICI</p>
+    					</div>
+	    				<img class="position-relative" src="images/epilation_2.svg"/>
+	    			</div>
+	    		</div>
+
+    			<div v-scroll="handleScroll" class="col-7 col-md-3 text-center mx-auto ml-md-5 my-3 icon transScroll">
+    				<h4 class="text-center border-bottom">Manucure</h4>
+    				<div class="position-relative">
+    					<div class="txt">
+    						<p>Manucure<br/>Description ICI</p>
+    					</div>
+	    				<img class="position-relative" src="images/vernis2.svg"/>
+	    			</div>
+    			</div>
+
+    			<div v-scroll="handleScroll" class="col-7 col-md-3 text-center mx-auto ml-md-5 my-3 icon transScroll">
+    				<h4 class="text-center border-bottom">Visage</h4>
+    				<div class="position-relative">
+    					<div class="txt">
+    						<p>Visage<br/>Description ICI</p>
+    					</div>
+	    				<img class="position-relative" src="images/visage.svg"/>
+	    			</div>
+    			</div>
+    		</div>
+    		<div class="row mb-5 mx-auto text-center">
+
+    			<div v-scroll="handleScroll" class="col-7 col-md-3 text-center mx-auto ml-md-5 my-3 icon transScroll position-relative">
+    				<h4 class="text-center border-bottom position-relative">Corp</h4>
+    				<div class="position-relative">
+    					<div class="txt">
+    						<p>Corp<br/>Description ICI</p>
+    					</div>
+	    				<img class="position-relative" src="images/corp.svg"/>
+	    			</div>
+	    		</div>
+
+    			<div v-scroll="handleScroll" class="col-7 col-md-3 text-center mx-auto ml-md-5 my-3 icon transScroll">
+    				<h4 class="text-center border-bottom">Marques</h4>
+    				<div class="position-relative">
+    					<div class="txt">
+    						<p>Marques<br/>Description ICI</p>
+    					</div>
+	    				<img class="position-relative" src="images/marques.svg"/>
+	    			</div>
+    			</div>
+
+    			<div v-scroll="handleScroll" class="col-7 col-md-3 text-center mx-auto ml-md-5 my-3 icon transScroll">
+    				<h4 class="text-center border-bottom">Maquillage</h4>
+    				<div class="position-relative">
+    					<div class="txt">
+    						<p>Maquillage<br/>Description ICI</p>
+    					</div>
+	    				<img class="position-relative" src="images/maquillage.svg"/>
+	    			</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+		<%- include ('socialNet.ejs') -%>
+
+		<%- include ('scriptFooter.ejs') -%>
+
+	</div>
+	</body>
+</html>

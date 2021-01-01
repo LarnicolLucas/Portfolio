@@ -1,0 +1,31 @@
+.containSnow{
+    background: black;
+    position: fixed ;
+    width: 100%;
+    height: 1000px;
+}
+.containSnow span{
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    background: white;
+    
+    animation-name: fall;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes fall{
+    0%{margin-top: 0px;}
+    50%{margin-top: 30px;}
+    100%{margin-top: 0px;}
+}
+.ball{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(60deg, blue, skyblue);
+}
