@@ -706,7 +706,7 @@ Vue.component('projecttease', {
     <a :href="props.link">
 
       <div 
-        class="image_project_effect valign-wrapper"
+        class="image_project_effect valign-wrapper hide-on-small-only"
         :style=" 'backgroundColor: ' +props.color+ 'F0;' "
         :class="{slide : triged}"
       >

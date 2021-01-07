@@ -1,9 +1,9 @@
 
 var palette0= {
     primary: "#fff",
-    secondary: "#197278",
-    tertary: "#772e25",
-    last: "#000"
+    secondary: "#b46148",
+    tertary: "#212121",
+    last: "#212121"
 };
 var palette1= {
     primary: "#fff",
@@ -52,7 +52,7 @@ const app_accueil = new Vue({
         },
 
         link_icon: [
-            {id: 0, src: "/images/github.svg", link: "https://github.com/LarnicolLucas/Pres", trig: false, text_color: palette0.last},
+            {id: 0, src: "/images/github.svg", link: "https://github.com/LarnicolLucas", trig: false, text_color: palette0.last},
             {id: 1, src: "/images/linkin.svg", link: "https://www.linkedin.com/in/lucas-larnicol-52a995201/", trig: false, text_color: palette0.last},
             {id: 2, src: "/images/sololearn.svg", link: 'https://www.sololearn.com/Profile/7125694', trig: false, text_color: palette0.last},
             {id: 3, src: "/images/twitter.svg", link: 'https://twitter.com/LarnicolLucas', trig: false, text_color: palette0.last},
